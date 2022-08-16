@@ -1,11 +1,4 @@
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
+/* RESET */
 body,
 h1,
 p,
@@ -17,7 +10,62 @@ img {
   padding: 0;
 }
 
+/* ESTILOS GERAIS */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 img {
   display: block;
   max-width: 100%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(212, 45%, 89%);
+  height: 100vh;
+  padding: 0 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2.2rem;
+  max-width: 26rem;
+  margin: 2.4rem auto 1.8rem auto;
+  color: hsl(218, 44%, 22%);
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.5rem;
+  color: hsl(220, 15%, 55%);
+  margin: 0 auto 2rem auto;
+  max-width: 24.8rem;
+}
+
+/* ESTILOS ESPECÍFICOS */
+.card-qr-code {
+  max-width: 32rem;
+  background-color: hsl(0, 0%, 100%);
+  padding: 1.6rem;
+  margin-bottom: 5.6rem;
+  border-radius: 1.6rem;
+  text-align: center;
+  box-shadow: 0 2.4rem 3.2rem rgba(123, 135, 157, 0.15);
+}
+
+.qr-code-box {
+  object-fit: cover;
+  border-radius: 0.8rem;
+}
+
+.attribution {
+  text-align: center;
 }
